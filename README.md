@@ -1,6 +1,7 @@
 # maple-mp510-LAN-IP-Scanner
 
 #host: maple MP510, 172.20.50.2
+#webmin: https://172.20.50.2:10000, <----- 用webmin建立database: network_scan, peter/xa------
 #app : /home/peter/0813-lan-monitor
 # sql
 CREATE DATABASE IF NOT EXISTS network_scan;
