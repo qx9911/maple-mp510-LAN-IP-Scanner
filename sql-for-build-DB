@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS network_scan;
+
+USE network_scan;
+
+CREATE TABLE IF NOT EXISTS ip_devices (
+    ip_address VARCHAR(15) NOT NULL PRIMARY KEY,
+    mac_address VARCHAR(17),
+    hostname VARCHAR(255),
+    first_seen TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_seen TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    unusual_time_count INT DEFAULT 0
+);
